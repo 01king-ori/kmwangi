@@ -7,20 +7,19 @@
     <title> King Pizza Palace</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="js/scripts.js"></script>
-    <script src="jquery-3.4.1.js"></script>
+
 </head>
 
 <body>
     <div class="container">
-            <ul class="nav">
-                <li><a   class="nav-link" href="#Home">Home</a></li>
-                <li><a  class="nav-link" href="#About Us">About us</a></li>
-                <li><a class="nav-link" href="#Menu">Menu</a></li>
-                <li><a class="nav-link"  href="#Contact Us">Contact Us</a></li>
-                <li style="float: right;"><a class="nav-link" href="#Order a pizza">Order a pizza</a></li>
-            </ul>
-        </div>
+        <ul class="nav">
+            <li><a class="nav-link" href="#Home">Home</a></li>
+            <li><a class="nav-link" href="#About Us">About us</a></li>
+            <li><a class="nav-link" href="#Menu">Menu</a></li>
+            <li><a class="nav-link" href="#Contact Us">Contact Us</a></li>
+            <li style="float: right;"><a class="nav-link" href="#Order a pizza">Order a pizza</a></li>
+        </ul>
+    </div>
     </div>
     <div id="body">
         <br><br>
@@ -28,14 +27,109 @@
         <h2>The best and affordable pizza palace in town</h2>
     </div>
     <div id="home">
-        <h3>Home</h3>
-        <p>We as the king Pizza Palace would like to welcome you to our website where you can order a pizza and choose the pizza you would like .We also offer free delivery to our customers who are on the city's near environment</p>
-        <p>We offer the best home made pizza using the best ingeridients so as to make our customers happy since our customer's happiness is our first priority</p> 
-         <img src="css/images/1234.jpeg"    
+        <div id="header">
+            <h3>Home</h3>
+        </div>
+        <p>We as the king Pizza Palace would like to welcome you to our website where you can order a pizza and choose
+            the pizza you would like .We also offer free delivery to our customers who are on the city's near
+            environment</p>
+        <p>We offer the best home made pizza using the best ingeridients so as to make our customers happy since our
+            customer's happiness is our first priority</p>
+        <img src="images/1234.jpeg">
     </div>
-
-
+    <div id="About Us">
+        <div id="header">
+            <h4>About our pizza inn</h4>
+        </div>
+        <p> king Pizza Palace might be one of the most recognisable icons of Asia.Whichever way you slice it,Kings pizza
+            palace is an industrial leader in the quick service pizza game.The first King's pizza palace was opened in
+            Iran and rose quickly in popularity.Serving hot oven -fresh pizza with its signature all-natural tomato
+            sauce and using only the freshest ingeredients </p>
+        <img src="images/xyz.jpg">
+        <p>The home made pizza dough is produced in-house dailya and is another reason why the pizza at King's Pizza
+            Palace always tastes better. The Twisty Bread ,the signature Wingz and the delicious Double Meal are
+            additional value-for-money options that keep our customers satisfied and make them coming back time after
+            time. These meals are the meals that have made our Terrific Tuesday everyone's favourite day of the week
+        </p>
+    </div>
+    <div id="Menu">
+        <div id="header">
+            <h4>Menu</h4>
+        </div>
+        <p>We have a wide variety of meals where one can choose the meal they desire</p>
+        <img src="images/menu.jpg">
+    </div>
+    <div id="Contact Us">
+        <div id="header">
+            <h6>CONTACT US</h6>
+        </div>
+        <div id="Contactus">
+            <div class="form">
+                <form action="contact" id="contact"></form>
+                <div id="info">
+                    <form action="contact" id="contact">
+                        <div id="info">
+                            <input type="text" id="name" placeholder="Name..">
+                            <input type="text" id="email" placeholder="Email.."><br>
+                        </div>
+                        <textarea name="" id="textarea" cols="60" rows="9"
+                            placeholder="Your message here..."></textarea>
+                        <br>
+                        <button id="button" class="bg-success" onclick="submit">SUBMIT</button>
+                    </form>
+                    <P id="important">You can also contact us using our number +357 25 845444</P>
+                </div>
+            </div>
+        </div>
+        <div id="Order a pizza">
+            <div id="header">
+                <h7>Order a pizza</h7>
+            </div>
+            <div id="order">
+                <div class="form">
+                    <div class="container">
+                        <label for="pizza">Choose the pizza that you want to order</label><br>
+                        <input type="radio" value="pizza" name="pizza" id="small" required />
+                        small<br>
+                        <input type="radio" value="pizza" name="pizza" id="medium" required />
+                        medium<br>
+                        <input type="radio" value="pizza" name="pizza" id="large" required />
+                        large<br>
+                    </div>
+                    <div class="container">
+                        <label for="crust">Choose the crust you want on your pizza</label><br>
+                        <input type="radio" value="crispy" name="crust" id="crispy" required />
+                        crispy<br>
+                        <input type="radio" value="stuffed" name="crust" id="stuffed" required />
+                        stuffed<br>
+                        <input type="radio" value="gluten-free" name="crust" id="gluten-free" required />
+                        gluten-free<br>
+                    </div>
+                    <div class="container">
+                        <label for="toppings">Choose the toppings that you want to order</label><br>
+                        <input type="radio" value="peri-peri" name="toppings" id="peri-peri" required />
+                        peri-peri chicken<br>
+                        <input type="radio" value="vegies" name="toppings" id="vegies" required />
+                        toppings<br>
+                        <input type="radio" value="pepperoni" name="toppings" id="pepperoni" required />
+                        pepperoni<br>
+                    </div>
+                </div>
+                <div class="container">
+                    <label for="number">How many pizzas do you want</label><br>
+                    <input type="number" value="number" name="number" id="number" required />
+                </div>
+                <div class="container">
+                    <label for="delivery">Do you want your pizza delivered</label><br>
+                    <input type="radio" value="delivery" name="delivery" id="yes" required />yes<br>
+                    <input type="radio" value="delivery" name="delivery" id="no" required />no<br>
+                </div>
+                    <button id="button" class="bg-success" onclick="submit">SUBMIT</button>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="js/scripts.js"></script>
 </body>
 
 </html>
-<a href="#home"></a>
