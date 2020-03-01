@@ -1,5 +1,5 @@
 #body{
-    background-image: url(images/download.jpeg);
+    background-image: url(../images/download.jpeg);
     text-align: center;
     font-style: italic;
     color:red ;
@@ -7,5 +7,21 @@
     margin-right: 60px;
 }
 #home{
-    font-style: oblique;
+    font-style: oblique
+}
+#header{
+    text-align: center;
+    color: chartreuse;
+    font-style: italic;
+}
+#important{
+    color: red;
+    font-style: inherit;
+    text-align: center;
+}
+#Contactus{
+    text-align: center;
+}
+#order{
+background-color: darksalmon;
 }
