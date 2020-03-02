@@ -85,50 +85,80 @@
             <div id="header">
                 <h7>Order a pizza</h7>
             </div>
-            <div id="order">
-                <div class="form">
-                    <div class="container">
-                        <label for="pizza">Choose the pizza that you want to order</label><br>
-                        <input type="radio" value="pizza" name="pizza" id="small" required />
-                        small<br>
-                        <input type="radio" value="pizza" name="pizza" id="medium" required />
-                        medium<br>
-                        <input type="radio" value="pizza" name="pizza" id="large" required />
-                        large<br>
+            <form id="charge">
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">Pizza Size</label>
+                        <br>
+                        <select name="" id="piz">
+                    
+                    <option value="Size">SELECT PIZZA</option>
+                    <option value="Small">Small Ksh.450</option>
+                    <option value="Medium">Medium Ksh. 600</option>
+                    <option value="Large">Large Ksh. 1000</option>
+​
+                </select>
                     </div>
-                    <div class="container">
-                        <label for="crust">Choose the crust you want on your pizza</label><br>
-                        <input type="radio" value="crispy" name="crust" id="crispy" required />
-                        crispy<br>
-                        <input type="radio" value="stuffed" name="crust" id="stuffed" required />
-                        stuffed<br>
-                        <input type="radio" value="gluten-free" name="crust" id="gluten-free" required />
-                        gluten-free<br>
+                    <br><br>
+​
+                    <div class="col-md-4">
+                        <label for="">Toppings</label>
+                        <br>
+                        <select name="" id="topveg">
+​
+                        <option value="">VEG</option>
+                        <option value="Mushrooms">Mushrooms ksh. 200</option>
+                        <option value="Capsicum">Capsicum ksh.200</option>
+                        <option value="Onions">Onions ksh. 200</option>
+                        
+                        
+                    </select>   
                     </div>
-                    <div class="container">
-                        <label for="toppings">Choose the toppings that you want to order</label><br>
-                        <input type="radio" value="peri-peri" name="toppings" id="peri-peri" required />
-                        peri-peri chicken<br>
-                        <input type="radio" value="vegies" name="toppings" id="vegies" required />
-                        toppings<br>
-                        <input type="radio" value="pepperoni" name="toppings" id="pepperoni" required />
-                        pepperoni<br>
+​
+                    <br><br>
+​
+                    <div class="col-md-4">
+​
+                        <label for="">Crust</label>
+                        <br>
+​
+                        <select name="Crust" id="crus">
+​
+                        <option value="Crust">CRUST</option>
+                        <option value="Stuffed">BBQ ksh. 100</option>
+                        <option value="Crispy">Pineapple ksh. 100</option>
+                        <option value="Gluten-free">Peperroni free ksh. 50</option>
+​
+                    </select>
                     </div>
                 </div>
-                <div class="container">
-                    <label for="number">How many pizzas do you want</label><br>
-                    <input type="number" value="number" name="number" id="number" required />
-                </div>
-                <div class="container">
-                    <label for="delivery">Do you want your pizza delivered</label><br>
-                    <input type="radio" value="delivery" name="delivery" id="yes" required />yes<br>
-                    <input type="radio" value="delivery" name="delivery" id="no" required />no<br>
-                </div>
-                    <button id="button" class="bg-success" onclick="submit">SUBMIT</button>
-                </div>
-            </div>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                <br><br>
+​
+                <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Order!!" id="order1">
+            </form>
+​
+​
+        </div>
+    </div>
+    <div class="oder">
+        <h3>Receipt</h3>
+        <p id="size">Pizza size:</p>
+        <p id="veg">Vegetables:</p>
+        <p id="crust">Crust:</p>
+        <p id="total">Total charges:</p>
+    </div>
+    <br><br>
+​
+    <div class="order2">
+        <input type="submit" class="btn  btn-rounded waves-effect btn-lg" value="Delivery" id="order2">
+    </div>
+​
+​
+    </div>
+​
+    
+        </div>
+        <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
             <script src="js/scripts.js"></script>
 </body>
 
