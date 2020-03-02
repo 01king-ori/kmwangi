@@ -59,7 +59,7 @@ $(document).ready(function () {
         prompt("kindly insert you location")
         prompt("Kindly insert your addrress")
         alert("You will be charged an extra 150/= for delivery")
-        alert("Thank you for purchasing from Ngowwa Pizzeria!Your order will be delivered to your location 🍕 🚚 in the next few minutes")
+        alert("Thank you for purchasing from King pizza palace!Your order will be delivered to your location 🍕 🚚 in the next few minutes")
     });
 })
 $(document).ready(function () {
